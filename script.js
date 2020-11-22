@@ -12,3 +12,21 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+function generatePassword(){
+
+  // Creating Variables
+
+  var userOptions = ["abcdefghijklmnopqrstuvwxyz","ABCDEFGHIJKLMNOPQRSTUVWXYZ", "0123456789", " !\"#$%&'()*+,-./:;<=>?@[\]^_`{|}~"];
+  var userPassword = "";
+  var userDisplayed = "";
+  
+  //Creating prompt for characters
+
+  var charLenght = prompt("How many characters would you like? Pick between 8-128?");
+
+  // Set the minimun and maximum amount of charcters
+
+  
+
+}
