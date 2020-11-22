@@ -13,6 +13,7 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
+  
   // Creating Variables
 
   var userOptions = [
@@ -60,7 +61,18 @@ for (var i = 0; i < userChoices.length; i++) {
   }
 }
 
+// Creating the new password
 
+for (var i = 0; i < charLength; i++) {
+  var newPassword = userPassword.charAt(Math.round(Math.random() * userPassword.length))
+  userDisplayed = userDisplayed + newPassword;
+}
+
+// Assigining new password
+
+password = userDisplayed
+
+return password;
 
 }
 
