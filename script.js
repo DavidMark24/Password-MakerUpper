@@ -26,7 +26,7 @@ function generatePassword() {
 
   //Creating prompt for characters
 
-  var charLenght = prompt(
+  var charLength = prompt(
     "How many characters would you like? Pick between 8-128."
   );
 
@@ -41,15 +41,28 @@ function generatePassword() {
       
     ); 
       }
-}
+
 
 // Confirm each characters in use
 
-var lowercase = confirm("Do you want to inlcude lowercase letters?")
-var upperscase = confirm("Do you want to inlcude uppercase letters?")
-var numbers = confirm("Do you want to inlcude numbers?")
-var specials = confirm("Do you want to inlcude special characters?")
+var lowercase = confirm("Do you want to inlcude lowercase letters?");
+var upperscase = confirm("Do you want to inlcude uppercase letters?");
+var numbers = confirm("Do you want to inlcude numbers?");
+var specials = confirm("Do you want to inlcude special characters?");
 
-var userChoices = [lowercase, upperscase, numbers, specials]
+var userChoices = [lowercase, upperscase, numbers, specials];
+
+// Created loop to include whether or not to include same index within the password
+
+for (var i = 0; i < userChoices.length; i++) {
+  if (userChoices[i]) {
+    userPassword = userPassword + userOptions[i]
+  }
+}
+
+
+
+}
+
 
 
